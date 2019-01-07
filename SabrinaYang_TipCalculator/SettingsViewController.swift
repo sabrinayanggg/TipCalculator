@@ -19,6 +19,15 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         let percent = defaults.string(forKey: "tip") ?? "10"
         let percent2 = defaults.string(forKey: "tip2") ?? "15"
@@ -28,11 +37,8 @@ class SettingsViewController: UIViewController {
         newTipMenu.setTitle("\(percent2)%", forSegmentAt: 1)
         newTipMenu.setTitle("\(percent3)%", forSegmentAt: 2)
     }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func changePercent(_ sender: Any) {
         //load defaults and change defaults based on selected percent

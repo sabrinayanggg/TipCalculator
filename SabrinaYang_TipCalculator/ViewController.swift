@@ -16,14 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let defaults = UserDefaults.standard
-        let percent = defaults.string(forKey: "tip") ?? "10"
-        let percent2 = defaults.string(forKey: "tip2") ?? "15"
-        let percent3 = defaults.string(forKey: "tip3") ?? "20"
-        
-        tipControl.setTitle("\(percent)%", forSegmentAt: 0)
-        tipControl.setTitle("\(percent2)%", forSegmentAt: 1)
-        tipControl.setTitle("\(percent3)%", forSegmentAt: 2)
         
     }
 
@@ -32,6 +24,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        let percent = defaults.string(forKey: "tip") ?? "10"
+        let percent2 = defaults.string(forKey: "tip2") ?? "15"
+        let percent3 = defaults.string(forKey: "tip3") ?? "20"
+        
+        tipControl.setTitle("\(percent)%", forSegmentAt: 0)
+        tipControl.setTitle("\(percent2)%", forSegmentAt: 1)
+        tipControl.setTitle("\(percent3)%", forSegmentAt: 2)
+    }
+    
     @IBAction func onTap(_ sender: Any) {
         //when main view tapped, get rid of keyboard
         view.endEditing(true)
