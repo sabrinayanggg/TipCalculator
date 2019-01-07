@@ -14,6 +14,7 @@
 		041F059B21E2C4F8000E7476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F059921E2C4F8000E7476 /* LaunchScreen.storyboard */; };
 		041F05A621E2C4F8000E7476 /* SabrinaYang_TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F05A521E2C4F8000E7476 /* SabrinaYang_TipCalculatorTests.swift */; };
 		041F05B121E2C4F8000E7476 /* SabrinaYang_TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F05B021E2C4F8000E7476 /* SabrinaYang_TipCalculatorUITests.swift */; };
+		041F05BF21E2E75C000E7476 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F05BE21E2E75C000E7476 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		041F05AC21E2C4F8000E7476 /* SabrinaYang_TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SabrinaYang_TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041F05B021E2C4F8000E7476 /* SabrinaYang_TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SabrinaYang_TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		041F05B221E2C4F8000E7476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041F05BE21E2E75C000E7476 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				041F059021E2C4F7000E7476 /* AppDelegate.swift */,
 				041F059221E2C4F7000E7476 /* ViewController.swift */,
 				041F059421E2C4F7000E7476 /* Main.storyboard */,
+				041F05BE21E2E75C000E7476 /* SettingsViewController.swift */,
 				041F059721E2C4F8000E7476 /* Assets.xcassets */,
 				041F059921E2C4F8000E7476 /* LaunchScreen.storyboard */,
 				041F059C21E2C4F8000E7476 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				041F059321E2C4F7000E7476 /* ViewController.swift in Sources */,
 				041F059121E2C4F7000E7476 /* AppDelegate.swift in Sources */,
+				041F05BF21E2E75C000E7476 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
